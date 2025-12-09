@@ -1,0 +1,56 @@
+name: Jekyll Build Check
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/jekyll-build.yml'
+  pull_request:
+    branches: [ main ]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/jekyll-build.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.1'
+        bundler-cache: false
+        
+    - name: Install Jekyll and dependencies
+      run: |
+        gem install jekyll bundler
+        cd docs
+        bundle init
+        bundle add jekyll
+        bundle add webrick
+        
+    - name: Build Jekyll site
+      run: |
+        cd docs
+        bundle exec jekyll build --source . --destination ./_site --baseurl /diablo4-season11-guide
+        
+    - name: Check for build errors
+      run: |
+        if [ ! -d "docs/_site" ]; then
+          echo "Jekyll build failed - _site directory not created"
+          exit 1
+        fi
+        echo "Jekyll build successful!"
+        ls -la docs/_site/
+        
+    - name: Upload artifact
+      uses: actions/upload-artifact@v4
+      with:
+        name: jekyll-site
+        path: docs/_site/
+        retention-days: 7

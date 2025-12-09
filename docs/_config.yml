@@ -1,0 +1,59 @@
+# Jekyll Configuration for Diablo 4 Season 11 Guide
+
+# Site settings
+title: "Diablo 4 Season 11 Guide"
+description: "Comprehensive build guides and resources for Diablo 4 Season 11"
+baseurl: "/diablo4-season11-guide"
+url: "https://TeamBuilderApp.github.io"
+
+# Author information
+author:
+  name: "TeamBuilderApp"
+  email: ""
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - .git
+  - .gitignore
+  - README.md
+
+# Include files
+include:
+  - _pages
+
+# Collections
+collections:
+  classes:
+    output: true
+    permalink: /classes/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "classes"
+    values:
+      layout: "default"
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Kramdown options
+kramdown:
+  input: GFM
+  hard_wrap: false
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
