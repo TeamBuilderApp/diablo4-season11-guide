@@ -1,0 +1,49 @@
+D4 SEASON 11 – 1-PAGE QUICK SHEET
+
+1) PRE-LAUNCH
+- Finish campaign once, unlock mount, claim renown.
+- Pick your Season 11 class + leveling build before login.
+
+2) DAY 1 LEVELING
+- Skip campaign.
+- Do the Season 11 quest until the seasonal mechanic unlocks.
+- Levels 1–15: high-density dungeon spam, upgrade weapon.
+- Levels 15–50: Legions + Helltides + your best layout dungeons.
+
+3) WORLD TIERS
+- WT3 capstone ~40–50:
+  - One strong damage aspect, basic defenses, some mobility.
+- WT4 capstone ~60:
+  - Sacred weapon, 2–3 stacked damage buckets (e.g. Vulnerable + Crit + Core),
+  - Real damage reduction and a panic button.
+
+4) ENDGAME LOOP (WT4)
+- Rotate:
+  - Nightmare Dungeons (XP + glyphs),
+  - Helltides (mats + gear),
+  - Seasonal activity,
+  - Uber bosses (uniques/Ubers).
+
+5) STAT PRIORITY
+- Leveling: weapon DPS > everything else.
+- Endgame:
+  - Pick 2–3 buckets (e.g., Vulnerable + Crit + Core/DoT) and stack them.
+- Always maintain:
+  - 1 mobility skill,
+  - 1 panic/defensive cooldown,
+  - Solid armor/resists.
+
+6) SAFE STARTER BUILDS (ADJUST FOR SEASON 11 PATCH)
+- Necro: Bone Spear.
+- Rogue: Twisting Blades.
+- Sorc: Ball Lightning / Chain Lightning.
+- Druid: Pulverize / Tornado.
+- Barb: Bleed / Rend.
+
+7) PLAYSTYLE RECOMMENDER
+- Solo casual: Necro / Druid.
+- Solo high skill: Rogue / Sorc.
+- Group: Shout Barb + AoE carry (Sorc/Druid).
+- Hardcore: Tank Druid, Bleed Barb, Minion Necro.
+
+Use this sheet at Season 11 launch, for clan friends, or for alt planning.
