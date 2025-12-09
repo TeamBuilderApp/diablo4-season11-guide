@@ -35,7 +35,7 @@ Welcome to the community-maintained Season 11 guide for Diablo IV. This document
 
 ## General build tips
 - Prioritize survivability first, then sustained damage. You can't optimize DPS if you die repeatedly.
-- Learn which affixes to reroll on your main gear pieces (main stat, damage type multiplier, cooldown reduction, resource cost reduction, and life on hit/avoid death modifiers).
+- Learn which affixes to reroll on your main gear pieces (main stat, damage type multiplier, cooldown reduction, resource cost reduction, life on hit, and damage avoidance modifiers).
 - Consider two-gear sets: a levelling set (fast clear) and a boss set (single-target 1v1).
 
 ## Group play tips
