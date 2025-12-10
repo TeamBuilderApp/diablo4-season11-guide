@@ -1,0 +1,309 @@
+/* Diablo 4 Season 11 Guide Styles */
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  line-height: 1.6;
+  color: #e0e0e0;
+  background-color: #1a1a1a;
+  background-image: linear-gradient(135deg, #1a1a1a 0%, #2d1810 100%);
+  min-height: 100vh;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navigation */
+.navbar {
+  background-color: #0d0d0d;
+  border-bottom: 2px solid #8b0000;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-brand a {
+  font-size: 1.5rem;
+  color: #ff6b6b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar-nav {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.navbar-nav li a {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar-nav li a:hover {
+  background-color: #8b0000;
+  color: #fff;
+}
+
+/* Main Content */
+main {
+  padding: 2rem 0;
+  min-height: calc(100vh - 200px);
+}
+
+article {
+  background-color: rgba(30, 30, 30, 0.9);
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  border: 1px solid #3a3a3a;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  color: #ff6b6b;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+  border-bottom: 3px solid #8b0000;
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #ffa07a;
+}
+
+h4 {
+  font-size: 1.25rem;
+  color: #ffb07a;
+}
+
+p {
+  margin-bottom: 1rem;
+  color: #d0d0d0;
+}
+
+/* Links */
+a {
+  color: #ff6b6b;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ff8787;
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin-left: 2rem;
+  margin-bottom: 1rem;
+  color: #d0d0d0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+/* Code */
+code {
+  background-color: #2a2a2a;
+  color: #ff6b6b;
+  padding: 0.2rem 0.4rem;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.9em;
+}
+
+pre {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 5px;
+  overflow-x: auto;
+  margin-bottom: 1rem;
+  border: 1px solid #3a3a3a;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Tables */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 1rem;
+  background-color: #2a2a2a;
+}
+
+th, td {
+  padding: 0.75rem;
+  text-align: left;
+  border: 1px solid #3a3a3a;
+}
+
+th {
+  background-color: #8b0000;
+  color: #fff;
+  font-weight: 600;
+}
+
+tr:nth-child(even) {
+  background-color: #252525;
+}
+
+/* Blockquotes */
+blockquote {
+  border-left: 4px solid #8b0000;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  color: #b0b0b0;
+  font-style: italic;
+}
+
+/* Horizontal Rule */
+hr {
+  border: none;
+  border-top: 2px solid #3a3a3a;
+  margin: 2rem 0;
+}
+
+/* Buttons and Interactive Elements */
+.button {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #8b0000;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #a00000;
+  text-decoration: none;
+}
+
+/* Footer */
+.site-footer {
+  background-color: #0d0d0d;
+  border-top: 2px solid #8b0000;
+  padding: 2rem 0;
+  margin-top: 3rem;
+  text-align: center;
+  color: #888;
+}
+
+.site-footer a {
+  color: #ff6b6b;
+  margin: 0 1rem;
+}
+
+.disclaimer {
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: #666;
+}
+
+/* Special Elements */
+.to-verify {
+  background-color: #4a4a00;
+  color: #ffff00;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  font-weight: bold;
+}
+
+.build-card {
+  background-color: #252525;
+  padding: 1.5rem;
+  border-radius: 5px;
+  margin-bottom: 1.5rem;
+  border-left: 4px solid #8b0000;
+}
+
+.stat-priority {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.stat-card {
+  background-color: #2a2a2a;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #3a3a3a;
+}
+
+.stat-card h4 {
+  margin-top: 0;
+  color: #ffa07a;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  article {
+    padding: 1rem;
+  }
+
+  .container {
+    padding: 0 10px;
+  }
+}
+
+/* Utility Classes */
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mt-4 { margin-top: 2rem; }
+
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.mb-4 { margin-bottom: 2rem; }

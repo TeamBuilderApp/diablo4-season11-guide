@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <title>{{ page.title | default: site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+<body>
+  {% include navbar.html %}
+  
+  <main class="container">
+    <article>
+      {% if page.title %}
+      <header>
+        <h1>{{ page.title }}</h1>
+      </header>
+      {% endif %}
+      
+      {{ content }}
+    </article>
+  </main>
+  
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.author.name }}. Season 11 Guide.</p>
+      <p>
+        <a href="{{ '/CONTRIBUTING.html' | relative_url }}">Contributing</a> |
+        <a href="https://github.com/TeamBuilderApp/diablo4-season11-guide">GitHub</a>
+      </p>
+      <p class="disclaimer">
+        <small>Diablo 4 is a trademark of Blizzard Entertainment. This is an unofficial fan-made guide.</small>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
