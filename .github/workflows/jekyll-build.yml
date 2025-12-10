@@ -20,6 +20,21 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v4
       
+    - name: Create PR ZIP archive
+      if: github.event_name == 'pull_request'
+      run: |
+        zip -r pr-changes.zip . -x "*.git*" -x "*node_modules*" -x "*.bundle*"
+        echo "Created PR archive: pr-changes.zip"
+        ls -lh pr-changes.zip
+        
+    - name: Upload PR as ZIP
+      if: github.event_name == 'pull_request'
+      uses: actions/upload-artifact@v4
+      with:
+        name: pr-changes-zip
+        path: pr-changes.zip
+        retention-days: 7
+      
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
