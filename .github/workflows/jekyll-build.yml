@@ -23,7 +23,8 @@ jobs:
     - name: Create PR ZIP archive
       if: github.event_name == 'pull_request'
       run: |
-        zip -r pr-changes.zip . -x "*.git*" -x "*node_modules*" -x "*.bundle*"
+        set -e
+        zip -r pr-changes.zip . -x "*.git*" -x "*node_modules*" -x "*.bundle*" -x "*.cache*" -x "*dist*" -x "*build*" -x "*.vscode*" -x "*.idea*" -x "*_site*"
         echo "Created PR archive: pr-changes.zip"
         ls -lh pr-changes.zip
         
